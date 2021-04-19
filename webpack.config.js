@@ -1,11 +1,12 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 
 module.exports = () => {
+
     return {
         mode : "development",
         entry : ["@babel/polyfill", "./src/index.tsx"],
         output : {
-            path : __dirname + './dist',
+            path : __dirname + '/dist',
             filename : "componentsBundle.js"
         },
 
