@@ -22,6 +22,13 @@ module.exports = () => {
             new HtmlWebpackPlugin({
                 template : './src/index.html'
             })
-        ]
+        ],
+
+        devServer : {
+            hot : true,
+            host : 'localhost',
+            port : 3000,
+            open: true,
+        }
     }
 }
